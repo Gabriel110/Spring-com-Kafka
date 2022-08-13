@@ -1,0 +1,8 @@
+--insert  into shop_item (id, amount, price, product_identifier) values (1, 32, 12.0, 'camisa pokemon');
+--insert  into shop_item (id, amount, price, product_identifier) values (2, 31, 122.0, 'camisa one pice');
+--insert  into shop_item (id, amount, price, product_identifier) values (3, 30, 142.0, 'pulsera naruto');
+--insert  into shop_item (id, amount, price, product_identifier) values (4, 29, 142.0, 'pulsera dbz');
+--insert  into shop_item (id, amount, price, product_identifier) values (5, 28, 142.0, 'pulsera fabrica de monstros');
+--
+--
+----insert into shop (id, identifier, dataShop, items ) values (1, 'compras', '2022-08-13T16:35:27.185333', 1);
