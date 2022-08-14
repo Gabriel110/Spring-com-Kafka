@@ -5,7 +5,7 @@ import br.com.gabriel.shop.aplication.shopitem.rest.dto.ShopItemResponse
 import org.springframework.stereotype.Service
 
 @Service
-class ShopItemService(
+class ShopItemServiceImpl(
     private val shopItemRepository: ShopItemRepository
 ) {
 
