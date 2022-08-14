@@ -1,5 +1,5 @@
 # language: pt
-Funcionalidade: Listando Shop
+Funcionalidade: crud shop
 Cenario: listando shop
   Quando acessa o controler
   Entao e retonado uma lista de shop
