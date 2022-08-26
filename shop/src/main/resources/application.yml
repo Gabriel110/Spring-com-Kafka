@@ -16,3 +16,27 @@ spring:
         show_sql: true
         format_sql: true
 
+# actuator prometheus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health,info,metrics,prometheus'
+      health:
+        show-details: 'always'
+    metrics:
+      export:
+        prometheus:
+          enabled: true
+      distribution:
+        slo:
+          http: '50ms,100ms,200ms,300ms,500ms,1s'
+      enable:
+        jvm: true
+      tags:
+        application: 'api-cursos'
+    endpoint:
+      metrics:
+        enabled: false
+      prometheus:
+        enabled: true
