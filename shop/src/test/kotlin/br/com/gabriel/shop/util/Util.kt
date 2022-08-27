@@ -1,6 +1,6 @@
 package br.com.gabriel.shop.util
 
-import br.com.gabriel.shop.aplication.doman.Shop
+import br.com.gabriel.shop.aplication.shop.model.Shop
 import br.com.gabriel.shop.aplication.shop.rest.dto.ShopRequest
 import br.com.gabriel.shop.aplication.shop.rest.dto.ShopResponse
 import br.com.gabriel.shop.aplication.shopitem.model.ShopItem

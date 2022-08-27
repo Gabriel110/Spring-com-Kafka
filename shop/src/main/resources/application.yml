@@ -5,12 +5,12 @@ server:
 spring:
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:forum
+    url: jdbc:h2:mem:shop
     username: sa
     password:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    defer-datasource-initialization: true
+    defer-datasource-initialization: false
     properties:
       hibernate:
         show_sql: true

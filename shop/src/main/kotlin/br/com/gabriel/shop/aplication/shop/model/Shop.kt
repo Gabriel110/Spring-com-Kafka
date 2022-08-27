@@ -1,4 +1,4 @@
-package br.com.gabriel.shop.aplication.doman
+package br.com.gabriel.shop.aplication.shop.model
 
 import br.com.gabriel.shop.aplication.shopitem.model.ShopItem
 import java.time.LocalDateTime

@@ -1,6 +1,6 @@
 package br.com.gabriel.shop.aplication.shop.service
 
-import br.com.gabriel.shop.aplication.doman.Shop
+import br.com.gabriel.shop.aplication.shop.model.Shop
 import br.com.gabriel.shop.aplication.shopitem.service.ShopItemRepository
 import br.com.gabriel.shop.util.Util
 import org.junit.jupiter.api.Assertions
