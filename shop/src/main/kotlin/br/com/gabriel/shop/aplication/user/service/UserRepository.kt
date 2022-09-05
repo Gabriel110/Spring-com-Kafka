@@ -1,12 +1,12 @@
 package br.com.gabriel.shop.aplication.user.service
 
-import br.com.gabriel.shop.aplication.user.model.User
+import br.com.gabriel.shop.aplication.user.model.Usser
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface UserRepository:JpaRepository<User, Long> {
+interface UserRepository:JpaRepository<Usser, Long> {
 
 
-    fun findByEmail(email: String): User?
+    fun findByEmail(email: String): Usser?
 }

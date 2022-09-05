@@ -1,6 +1,6 @@
 <configuration>
 
-    //<property name="LOG_PATH" value="logs/api-cursos.log"/>
+<!--    //<property name="LOG_PATH" value="logs/api-cursos.log"/>-->
 
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">

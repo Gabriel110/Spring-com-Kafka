@@ -1,10 +1,10 @@
 package br.com.gabriel.shop.config.dto
 
-import br.com.gabriel.shop.aplication.user.model.User
+import br.com.gabriel.shop.aplication.user.model.Usser
 import org.springframework.security.core.userdetails.UserDetails
 
 class UserDatails(
-    private val user: User
+    private val user: Usser
 ): UserDetails {
     override fun getAuthorities() = null
 
