@@ -5,6 +5,7 @@ import br.com.gabriel.shop.aplication.user.model.UsserData
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.stereotype.Service
+import java.lang.RuntimeException
 import br.com.gabriel.shop.config.dto.UserDatails as MyUserDatails
 
 @Service
@@ -13,11 +14,13 @@ class UserService(
 ): UserDetailsService{
 
     override fun loadUserByUsername(username: String): UserDetails {
-
-       val user = UsserData.from(
+        UsserData.from(
             email = username
-        ).findByEmail(userPortRepository, username)
-
-       return MyUserDatails(user!!.toEntity())
+        ).runCatching {
+           val user = this.findByEmail(userPortRepository, username)
+           return MyUserDatails(user!!.toEntity())
+       }.getOrElse{
+           throw RuntimeException()
+       }
     }
 }
