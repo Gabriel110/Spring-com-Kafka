@@ -1,5 +1,6 @@
 package br.com.gabriel.shop.aplication.user.model
 
+import br.com.gabriel.shop.aplication.user.rest.dto.UserRequest
 import br.com.gabriel.shop.aplication.user.service.UserPortRepository
 
 data class UsserData(
@@ -23,6 +24,14 @@ data class UsserData(
             email: String?,
         ) = UsserData(
             email = email,
+        )
+
+        fun from(
+            userRequest: UserRequest
+        ) = UsserData(
+            nome = userRequest.nome,
+            email = userRequest.email,
+            password = userRequest.password
         )
     }
 }
