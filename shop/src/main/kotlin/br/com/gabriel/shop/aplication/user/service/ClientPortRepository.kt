@@ -2,7 +2,7 @@ package br.com.gabriel.shop.aplication.user.service
 
 import br.com.gabriel.shop.aplication.user.model.UsserData
 
-interface UserPortRepository {
+interface ClientPortRepository {
 
     fun findByEmail(email: String): UsserData?
 

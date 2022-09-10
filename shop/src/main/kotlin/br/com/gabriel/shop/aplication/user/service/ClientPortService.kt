@@ -7,20 +7,20 @@ import org.hibernate.annotations.common.util.impl.LoggerFactory.logger
 import org.springframework.stereotype.Repository
 
 @Repository
-class UserPortService(
-    private val userRepository: UserRepository
-): UserPortRepository {
+class ClientPortService(
+    private val clientRepository: ClientRepository
+): ClientPortRepository {
 
-    val logger = logger(UserPortRepository::class.java)
+    val logger = logger(ClientPortRepository::class.java)
 
     override fun findByEmail(email: String): UsserData? {
         logger.info("Buscando usuario por email!")
-        val response = userRepository.findByEmail(email)
+        val response = clientRepository.findByEmail(email)
         return response?.toData()
     }
 
     override fun save(data: UsserData): UsserData {
-        val response = userRepository.save(data.toEntity())
+        val response = clientRepository.save(data.toEntity())
         return response.toData()
     }
 

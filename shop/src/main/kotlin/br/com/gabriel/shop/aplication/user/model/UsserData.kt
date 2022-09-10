@@ -1,7 +1,7 @@
 package br.com.gabriel.shop.aplication.user.model
 
-import br.com.gabriel.shop.aplication.user.rest.dto.UserRequest
-import br.com.gabriel.shop.aplication.user.service.UserPortRepository
+import br.com.gabriel.shop.aplication.user.rest.dto.ClientRequest
+import br.com.gabriel.shop.aplication.user.service.ClientPortRepository
 
 data class UsserData(
     val id: Long? = null,
@@ -10,11 +10,11 @@ data class UsserData(
     val password: String? = null
 ) {
 
-    fun save(repo: UserPortRepository): UsserData{
+    fun save(repo: ClientPortRepository): UsserData{
         return repo.save(this)
     }
 
-    fun findByEmail(repo: UserPortRepository, email: String): UsserData? {
+    fun findByEmail(repo: ClientPortRepository, email: String): UsserData? {
         return repo.findByEmail(email)
     }
 
@@ -27,11 +27,11 @@ data class UsserData(
         )
 
         fun from(
-            userRequest: UserRequest
+            clientRequest: ClientRequest
         ) = UsserData(
-            nome = userRequest.nome,
-            email = userRequest.email,
-            password = userRequest.password
+            nome = clientRequest.nome,
+            email = clientRequest.email,
+            password = clientRequest.password
         )
     }
 }

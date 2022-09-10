@@ -1,25 +1,24 @@
 package br.com.gabriel.shop.aplication.user.rest.controller
 
-import br.com.gabriel.shop.aplication.user.rest.dto.UserRequest
-import br.com.gabriel.shop.aplication.user.service.UserService
+import br.com.gabriel.shop.aplication.user.rest.dto.ClientRequest
+import br.com.gabriel.shop.aplication.user.service.ClientService
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/user")
-class UserController(
-    private val userService: UserService
+class ClientController(
+    private val clientService: ClientService
 ) {
 
     @GetMapping("/save")
     fun save(){
-        val userRequest = UserRequest(
+        val clientRequest = ClientRequest(
             nome = "Maria",
             email = "maria@email.com",
             password = "123456789"
         )
-        userService.save(userRequest)
+        clientService.save(clientRequest)
     }
 }

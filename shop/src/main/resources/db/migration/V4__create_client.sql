@@ -1,4 +1,4 @@
-create table usser(
+create table client(
     id bigint not null auto_increment,
     nome varchar(50) not null,
     email varchar(50) not null,
@@ -6,4 +6,4 @@ create table usser(
     primary key(id)
 );
 
-insert into usser values(1, 'Gabriel', 'gabriel@email.com', '$2a$12$vbhKgLSRztDIOsJyMC9wUe1uDA8nBkZXx0.0vuty1IN5iYG1S/qHi');
+insert into client values(1, 'Gabriel', 'gabriel@email.com', '$2a$12$vbhKgLSRztDIOsJyMC9wUe1uDA8nBkZXx0.0vuty1IN5iYG1S/qHi');
