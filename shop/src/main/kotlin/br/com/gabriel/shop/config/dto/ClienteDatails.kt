@@ -1,16 +1,16 @@
 package br.com.gabriel.shop.config.dto
 
-import br.com.gabriel.shop.aplication.user.model.Client
+import br.com.gabriel.shop.aplication.user.model.Cliente
 import org.springframework.security.core.userdetails.UserDetails
 
-class ClientDatails(
-    private val client: Client
+class ClienteDatails(
+    private val cliente: Cliente
 ): UserDetails {
     override fun getAuthorities() = null
 
-    override fun getPassword() = client.password
+    override fun getPassword() = cliente.password
 
-    override fun getUsername() = client.email
+    override fun getUsername() = cliente.email
 
     override fun isAccountNonExpired() = true
 

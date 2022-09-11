@@ -1,17 +1,17 @@
 package br.com.gabriel.shop.aplication.user.mapper
 
-import br.com.gabriel.shop.aplication.user.model.Client
-import br.com.gabriel.shop.aplication.user.model.UsserData
+import br.com.gabriel.shop.aplication.user.model.Cliente
+import br.com.gabriel.shop.aplication.user.model.ClienteData
 
 
-fun Client.toData() = UsserData(
+fun Cliente.toData() = ClienteData(
     id = this.id,
     nome = this.nome,
     email = this.email,
     password = this.password
 )
 
-fun UsserData.toEntity() = Client(
+fun ClienteData.toEntity() = Cliente(
     nome = this.nome?:" ",
     email = this.email?:" ",
     password = this.password?:" "
