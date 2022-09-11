@@ -19,7 +19,9 @@ class WebSecurityConfigurer(
 ): WebSecurityConfigurerAdapter(){
 
      override fun configure(http: HttpSecurity?){
-        http?.authorizeRequests()?.anyRequest()?.authenticated()
+        http?.authorizeRequests()
+            //?.antMatchers("/h2-console/**")?.hasAuthority("ADM")
+            ?.anyRequest()?.authenticated()
             ?.and()
             ?.sessionManagement()?.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             ?.and()

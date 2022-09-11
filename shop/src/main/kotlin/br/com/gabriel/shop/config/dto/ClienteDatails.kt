@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails
 class ClienteDatails(
     private val cliente: Cliente
 ): UserDetails {
-    override fun getAuthorities() = null
+    override fun getAuthorities() = cliente.roles
 
     override fun getPassword() = cliente.password
 
