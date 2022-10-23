@@ -160,7 +160,8 @@
 
 					<pluginOptions>
 <!--						<option>no-arg:annotation=com.my.Annotation</option>-->
-						<option>br.com.gabriel.shop.config.util.NoArg</option>
+						<option>no-arg:annotation=br.com.gabriel.shop.config.util.NoArg</option>
+						<option>no-arg:invokeInitializers=true</option>
 					</pluginOptions>
 				</configuration>
 				<dependencies>
