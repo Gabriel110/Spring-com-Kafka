@@ -1,4 +1,4 @@
-package br.com.gabriel.shop.aplication.shopitem.controller
+package br.com.gabriel.shop.unidade.aplication.shopitem.controller
 
 import br.com.gabriel.shop.aplication.shopitem.rest.controller.ShopItenController
 import br.com.gabriel.shop.aplication.shopitem.service.ShopItemServiceImpl

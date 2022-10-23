@@ -1,6 +1,8 @@
-package br.com.gabriel.shop.aplication.shopitem.service
+package br.com.gabriel.shop.unidade.aplication.shopitem.service
 
 import br.com.gabriel.shop.aplication.shopitem.model.ShopItem
+import br.com.gabriel.shop.aplication.shopitem.service.ShopItemRepository
+import br.com.gabriel.shop.aplication.shopitem.service.ShopItemServiceImpl
 import br.com.gabriel.shop.util.Util
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
