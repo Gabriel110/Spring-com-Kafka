@@ -113,6 +113,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>br.com.six2six</groupId>
+			<artifactId>fixture-factory</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
 <!--		<dependency>-->
 <!--			<groupId>ch.qos.logback.contrib</groupId>-->
 <!--			<artifactId>logback-json-classic</artifactId>-->
@@ -151,6 +157,11 @@
 						<plugin>no-arg</plugin>
 						<plugin>all-open</plugin>
 					</compilerPlugins>
+
+					<pluginOptions>
+<!--						<option>no-arg:annotation=com.my.Annotation</option>-->
+						<option>br.com.gabriel.shop.config.util.NoArg</option>
+					</pluginOptions>
 				</configuration>
 				<dependencies>
 					<dependency>
